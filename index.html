@@ -1,12 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doyup Lee - Research Scientist</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <p>Work in Progress</p>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="#home">Doyup Lee</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <!-- <li><a href="blog.html">Blog</a></li> -->
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-image">
+                    <img src="assets/doyup_profile.png" alt="Doyup Lee" class="profile-img">
+                </div>
+                <div class="hero-content">
+                    <h1 class="hero-title">Doyup Lee</h1>
+                    <p class="hero-subtitle">Member of Technical Staff @ Runway</p>
+                    <p class="hero-description" style="font-size: 0.9rem;">
+						I am a member of technical staff at Runway, New York. I am the co-creator of <span style="color:inherit; text-decoration:none; cursor:pointer;" onclick="window.open('https://research.runwayml.com/gen3','_blank')">Gen-3 Alpha</span>, <span style="color:inherit; text-decoration:none; cursor:pointer;" onclick="window.open('https://research.runwayml.com/frames','_blank')">Frames</span>, and <span style="color:inherit; text-decoration:none; cursor:pointer;" onclick="window.open('https://research.runwayml.com/gen4','_blank')">Gen-4</span>, which are the flagship products of Runway for media generation.
+						Before that, I was a team lead at <span style="color:inherit; text-decoration:none; cursor:pointer;" onclick="window.open('https://www.kakaocorp.com/page/?lang=ENG&tab=all','_blank')">Kakao Brain</span> and worked on visual content generation and representation learning.
+						I received my Ph.D. from Pohang University of Science and Technology (POSTECH), South Korea, advised by Prof. <span style="color:inherit; text-decoration:none; cursor:pointer;" onclick="window.open('https://wscrony.github.io/','_blank')">Wook-Shin Han</span>.
+						I obtained my bachelor degree in Industrial Management Engineering from POSTECH.
+                    </p>
+                    <div class="hero-links">
+                        <a href="mailto:doyup@runwayml.com" class="hero-link"><i class="fas fa-envelope"></i></a>
+						<a href="https://scholar.google.com/citations?user=5rAj44kAAAAJ" class="hero-link" target="_blank"><i class="fas fa-graduation-cap"></i></a>
+                        <a href="https://linkedin.com/in/doyuplee" class="hero-link" target="_blank"><i class="fab fa-linkedin"></i></a>
+						<a href="https://x.com/doyup_lee" class="hero-link" target="_blank"><i class="fab fa-x"></i></a>
+						<a href="https://github.com/leedoyup" class="hero-link" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="section">
+        <div class="container">
+            <h2 class="section-title">News</h2>
+            <div class="news-container">
+                <div class="news-item">
+                    <div class="news-date">Apr 2025</div>
+                    <div class="news-content">
+                        <p>We released <a href="https://runwayml.com/research/introducing-runway-gen-4" target="_blank">Gen-4</a>, a new generative model for consistent and controllable media.</p>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">Jan 2025</div>
+                    <div class="news-content">
+                        <p>We released <a href="https://runwayml.com/research/introducing-frames" target="_blank">Frames</a>, a new image generation model with remarkable stylistic control and visual fidelity.</p>
+                    </div>
+                </div>
+				<div class="news-item">
+                    <div class="news-date">Sep 2024</div>
+                    <div class="news-content">
+                        <p>One paper is accepted to ECCV 2024.</p>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">Jul 2024</div>
+                    <div class="news-content">
+                        <p>One paper is accepted to ICML 2024.</p>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">Jun 2024</div>
+                    <div class="news-content">
+                        <p>We released <a href="https://runwayml.com/research/introducing-gen-3-alpha" target="_blank">Gen-3 Alpha</a>, a new frontier model of video generation with unprecedented quality.</p>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">Jan 2024</div>
+                    <div class="news-content">
+                        <p>I joined <a href="https://runwayml.com" target="_blank">Runway</a> as a Member of Technical Staff in Applied Research 🎉 ! </p>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">Dec 2023</div>
+                    <div class="news-content">
+                        <p>One paper is accepted to NeurIPS 2023.</p>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">Jun 2023</div>
+                    <div class="news-content">
+                        <p>Three papers are accepted to CVPR 2023, including one <span style="color: var(--accent-color); font-weight: 600;">highlight paper</span>.</p>
+                    </div>
+                </div>
+				<div class="news-item">
+                    <div class="news-date">Feb 2022</div>
+                    <div class="news-content">
+                        <p>Two papers are accepted to NeurIPS 2022.</p>
+                    </div>
+                </div>
+				<div class="news-item">
+                    <div class="news-date">Jun 2022</div>
+                    <div class="news-content">
+                        <p>Two papers are accepted to CVPR 2022.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Selected Publications</h2>
+            <div style="font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 1.2rem;">
+                Please refer to my <a href="https://scholar.google.com/citations?user=5rAj44kAAAAJ" target="_blank" style="color: var(--primary-color); text-decoration: underline;">Google Scholar</a> page for full publication list. <br>
+				(* and † indicate co-first author and corresponding author, respectively.)
+            </div>
+            <ul class="publications-list" style="list-style: none; padding: 0; margin: 0;">
+                <!-- Highlighted Papers -->
+				<li class="pub-card" style="margin-bottom: 2rem;">
+                    <div class="pub-type">ECCV 2024</div>
+                    <h4 class="pub-title">NVS-Adapter: Plug-and-Play Novel View Synthesis from a Single Image</h4>
+                    <p class="pub-authors">Yoonwoo Jeong, Jinwoo Lee, Chiheon Kim, Minsu Cho†, <strong>Doyup Lee†</strong></p>
+                </li>
+				<li class="pub-card" style="margin-bottom: 2rem;">
+                    <div class="pub-type">ICML 2024</div>
+                    <h4 class="pub-title">Retrieval-Augmented Score Distillation for Text-to-3D Generation</h4>
+                    <p class="pub-authors">Junyoung Seo, Susung Hong, Wooseok Jang, Min-Seop Kwak, Hyeonsu Kim, <strong>Doyup Lee†</strong>, Seungryong Kim†</p>
+                </li>
+                <li class="pub-card" style="margin-bottom: 2rem;">
+                    <div class="pub-type">NeurIPS 2023</div>
+                    <h4 class="pub-title">Locality-Aware Generalizable Implicit Neural Representation</h4>
+                    <p class="pub-authors"><strong>Doyup Lee*</strong>, Chiheon Kim*, Minsu Cho, Wook-Shin Han</p>
+                </li>
+				<li class="pub-card" style="margin-bottom: 2rem;">
+                    <div class="pub-type">CVPR 2023</div>
+                    <h4 class="pub-title">Generalizable Implicit Neural Representations via Instance Pattern Composers</h4>
+					<p class="pub-authors">Highlight (acceptance rate: 2.5%)</p>
+                    <p class="pub-authors">Chiheon Kim*, <strong>Doyup Lee*</strong>, Saehoon Kim, Minsu Cho, Wook-Shin Han</p>
+                </li>
+				<li class="pub-card" style="margin-bottom: 2rem;">
+					<div class="pub-type">CVPR 2023</div>
+					<h4 class="pub-title">Towards End-to-End Generative Modeling of Long Videos With Memory-Efficient Bidirectional Transformers</h4>
+					<p class="pub-authors">Jaehoon Yoo, Semin Kim, <strong>Doyup Lee</strong>, Chiheon Kim, Seunghoon Hong</p>
+				</li>
+                <li class="pub-card" style="margin-bottom: 2rem;">
+                    <div class="pub-type">NeurIPS 2022</div>
+                    <h4 class="pub-title">Draft-and-Revise: Effective Image Generation with Contextual RQ-Transformer</h4>
+                    <p class="pub-authors"><strong>Doyup Lee*</strong>, Chiheon Kim*, Saehoon Kim, Minsu Cho, Wook-Shin Han</p>
+                </li>
+                <li class="pub-card" style="margin-bottom: 2rem;">
+                    <div class="pub-type">CVPR 2022</div>
+                    <h4 class="pub-title">Autoregressive Image Generation using Residual Quantization</h4>
+                    <p class="pub-authors"><strong>Doyup Lee*</strong>, Chiheon Kim*, Saehoon Kim, Minsu Cho, Wook-Shin Han</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <p>I'm always interested in discussing research collaborations and opportunities in generative AI.</p>
+                <div class="contact-info">
+                    <a href="mailto:doyup@runwayml.com" class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>doyup@runwayml.com</span>
+                    </a>
+                    <a href="https://linkedin.com/in/doyuplee" class="contact-item" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+					<a href="https://x.com/doyup_lee" class="contact-item" target="_blank">
+						<i class="fab fa-twitter"></i>
+						<span>Twitter</span>
+					</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Doyup Lee. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
