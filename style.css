@@ -327,6 +327,26 @@ body {
     font-weight: 600;
 }
 
+/* Publication Tags */
+.pub-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 0.5rem;
+}
+
+.pub-tag {
+    background: #f0f2f5;
+    color: #666666;
+    border-radius: 12px;
+    padding: 2px 10px;
+    font-size: 0.85em;
+    white-space: nowrap;
+    display: inline-block;
+    margin-right: 6px;
+    border: 1px solid #e0e0e0;
+}
+
 /* Publication Stats */
 .pub-stats {
     display: flex;
